@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/resest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>Cryptography</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cryptography</h1>
+    </header>
+    <main>
+        <section>
+            <p> <strong> A criptografia trata-se de um conjunto de regras que visa codificar a informação de modo que só o seu
+                emissor e receptor consigam decifrá-la.
+                Vários são os métodos usados e, com o passar do tempo, elas sofrem modificações visando seu
+                aperfeiçoamento. Além do surgimento de novas práticas mais seguras.
+                A prática criptográfica visa reforçar a segurança de uma mensagem, ou de um arquivo, “embaralhando” o
+                seu conteúdo. Para criptografar ou descriptografar uma mensagem, você também precisa da chave certa paradecodificá-la. É o modo mais eficaz para ocultar comunicações através de informações em código, onde o  remetente e o destinatário têm a chave para decifrar os dados.</strong></p>
+            <form>
+                <h3>Escolha seu método:</h3>
+                <div class="tipos">
+                    <div>
+                        <input type="radio" checked name="metodo" value="1" id="cifraDeCesar">
+                        <label for=""> <strong>Cifra de Cesar</strong></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="metodo" value="2" id="base64">
+                        <label for=""> <strong>Base 64</strong></label>
+                    </div>
+                </div>
+                <div class="areaDoTexto">
+                    <textarea id="textoInicial" placeholder="Digite sua mensagem"></textarea>
+                    <textarea id="textoFinal" placeholder="Retorno"></textarea>
+                </div>
+                <div class="codDecod">
+                    <div>
+                        <input type="number" id="incrementoCifra" placeholder="Chave"></input>
+                    </div>
+                    <div>
+                        <input type="radio" checked name="criptografia" value="codificar" id="codificar">
+                        <label for=""> <strong>Codificar</strong></label>
+                    </div>
+                    <div>
+                       <input type="radio" name="criptografia" value="decodificar" id="decodificar">
+                        <label for=""> <strong>Decodificar</strong></label> 
+                    </div>
+                </div>
+            </form>
+            <button id="btn-enviar">Enviar</button>
+            
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
